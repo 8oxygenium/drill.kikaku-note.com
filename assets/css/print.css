@@ -1,0 +1,76 @@
+/* =========================================================
+   print.css — A4縦のドリルプリント用
+   - 画面では print-sheet を隠し、印刷時のみ表示する。
+   - ヘッダー・ナビ・ボタンなど画面UIは印刷しない。
+   - body.print-answers のときだけ「こたえ」を表示する。
+   ========================================================= */
+
+@media print {
+  /* 画面UIは印刷しない */
+  .site-header,
+  .site-footer,
+  .site-nav,
+  .nav-toggle,
+  .skip-link,
+  .crumbs,
+  .cta-row,
+  .card-grid,
+  .quiz-shell,
+  .hero,
+  .note,
+  .page-head .lead,
+  .btn {
+    display: none !important;
+  }
+
+  html, body { background: #fff !important; color: #000 !important; }
+
+  @page { size: A4 portrait; margin: 14mm 12mm; }
+
+  /* 印刷シート本体 */
+  .print-sheet {
+    display: block !important;
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    color: #000;
+  }
+
+  .print-head { border-bottom: 2px solid #000; padding-bottom: 6px; margin-bottom: 12px; }
+  .print-title { font-size: 16pt; margin: 0 0 6px; }
+  .print-name-line { display: flex; justify-content: space-between; font-size: 11pt; }
+
+  .print-list { margin: 0; padding-left: 1.4em; }
+  .print-item {
+    margin-bottom: 10pt;
+    padding-bottom: 8pt;
+    border-bottom: 1px dotted #999;
+    page-break-inside: avoid;
+  }
+  .print-sentence { font-size: 11pt; margin: 0 0 3pt; }
+  .print-q { font-size: 12.5pt; font-weight: 700; margin: 0 0 5pt; }
+  .print-choices { font-size: 11pt; margin: 0 0 5pt; }
+
+  /* 漢字の書き取りマス */
+  .print-kanji-boxes { display: flex; gap: 4pt; margin-top: 4pt; }
+  .print-kanji-boxes .kbox {
+    width: 34pt; height: 34pt; border: 1px solid #333; border-radius: 3pt;
+    display: inline-block;
+  }
+
+  /* 英語のスペル練習欄 */
+  .print-spell-line { display: flex; gap: 6pt; margin-top: 4pt; }
+  .print-spell-line .sbox {
+    width: 26pt; height: 30pt; border-bottom: 2px solid #333; display: inline-block;
+  }
+
+  /* その他（国語・算数）の解答欄 */
+  .print-answer-line {
+    height: 26pt; border-bottom: 1.5px solid #333; margin-top: 4pt;
+  }
+
+  /* こたえ：既定は非表示。答えありモードでのみ表示 */
+  .print-answer { display: none; font-size: 11pt; font-weight: 700; margin: 4pt 0 0; color: #1a5e2a; }
+  body.print-answers .print-answer { display: block; }
+}
+
+/* 画面表示中は常に隠す（保険） */
+.print-sheet { display: none; }

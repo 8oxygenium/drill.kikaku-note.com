@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>英語 スペルドリル｜つまずきドリル</title>
+<meta name="description" content="アルファベット・音・スペルの対応を練習する10分ドリル。">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/print.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">ド</span>
+      <span class="brand-text">つまずきドリル</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="教科">
+      <ul>
+        <li><a href="/subjects/kanji/">漢字</a></li>
+        <li><a href="/subjects/kokugo/">国語</a></li>
+        <li><a href="/subjects/english/">英語</a></li>
+        <li><a href="/subjects/math/">算数</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <p class="crumbs"><a href="/">トップ</a><span>›</span><a href="/subjects/english/">英語</a><span>›</span>スペル</p>
+
+    <div class="page-head">
+      <h1>英語 スペルドリル</h1>
+      <p class="lead">大文字・小文字、そして cat・dog などの単語のつづりです。印刷すると練習欄が出ます。</p>
+    </div>
+
+    <div class="quiz-shell">
+      <div id="quiz"
+           data-src="/data/english-spelling.json"
+           data-subject="english"
+           data-session="10"
+           data-print="english"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span><a href="/">つまずきドリル</a></span>
+    <span>小2・小3の家庭学習用</span>
+  </div>
+</footer>
+
+<script src="/assets/js/storage.js"></script>
+<script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

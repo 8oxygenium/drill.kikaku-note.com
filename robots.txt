@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# P0 期間中は各HTMLの <meta name="robots" content="noindex,nofollow"> で
+# 検索インデックスを止めています。品質確認後に noindex を解除します。
