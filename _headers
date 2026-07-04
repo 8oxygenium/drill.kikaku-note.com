@@ -1,0 +1,8 @@
+/CLAUDE.md
+  X-Robots-Tag: noindex, noarchive, nosnippet
+
+/docs/*
+  X-Robots-Tag: noindex, noarchive, nosnippet
+
+/.claude/*
+  X-Robots-Tag: noindex, noarchive, nosnippet

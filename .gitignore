@@ -1,3 +1,7 @@
 .DS_Store
 Thumbs.db
-.claude/launch.json
+
+# 内部作業ファイル(Claude Code用指示・設計文書)。本番デプロイ対象から除外。
+.claude/
+CLAUDE.md
+docs/
