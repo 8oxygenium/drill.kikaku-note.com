@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "day-001",
+    "title": "1日目：漢字と英語スペルの確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-001",
+          "k2-002",
+          "k2-003",
+          "k2-004"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-001",
+          "e-al-002",
+          "e-al-003"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-001",
+          "ko-002"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-001"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-001.html"
+  },
+  {
+    "id": "day-002",
+    "title": "2日目：漢字と国語の基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-005",
+          "k3-006",
+          "k3-007",
+          "k3-008"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-004",
+          "e-al-005",
+          "e-al-006"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-003",
+          "ko-004"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-002"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-002.html"
+  },
+  {
+    "id": "day-003",
+    "title": "3日目：今日のつまずき直し",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-009",
+          "k2-010",
+          "k2-001",
+          "k2-002"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-007",
+          "e-al-008",
+          "e-al-009"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-005",
+          "ko-006"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-003"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-003.html"
+  },
+  {
+    "id": "day-004",
+    "title": "4日目：漢字・英語・国語のミックス復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-003",
+          "k3-004",
+          "k3-005",
+          "k3-006"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-010",
+          "e-al-011",
+          "e-al-012"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-007",
+          "ko-008"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-004"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-004.html"
+  },
+  {
+    "id": "day-005",
+    "title": "5日目：10分でできる基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-007",
+          "k2-008",
+          "k2-009",
+          "k2-010"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-013",
+          "e-al-014",
+          "e-al-015"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-009",
+          "ko-010"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-005"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-005.html"
+  },
+  {
+    "id": "day-006",
+    "title": "6日目：漢字を中心にした復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-001",
+          "k3-002",
+          "k3-003",
+          "k3-004"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-016",
+          "e-al-017",
+          "e-al-018"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-011",
+          "ko-012"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-006"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-006.html"
+  },
+  {
+    "id": "day-007",
+    "title": "7日目：漢字と英語スペルの確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-005",
+          "k2-006",
+          "k2-007",
+          "k2-008"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-019",
+          "e-al-020",
+          "e-w3-001"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-013",
+          "ko-014"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-007"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-007.html"
+  },
+  {
+    "id": "day-008",
+    "title": "8日目：漢字と国語の基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-009",
+          "k3-010",
+          "k3-001",
+          "k3-002"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-002",
+          "e-w3-003",
+          "e-w3-004"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-015",
+          "ko-016"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-008"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-008.html"
+  },
+  {
+    "id": "day-009",
+    "title": "9日目：今日のつまずき直し",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-003",
+          "k2-004",
+          "k2-005",
+          "k2-006"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-005",
+          "e-w3-006",
+          "e-w3-007"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-017",
+          "ko-018"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-009"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-009.html"
+  },
+  {
+    "id": "day-010",
+    "title": "10日目：漢字・英語・国語のミックス復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-007",
+          "k3-008",
+          "k3-009",
+          "k3-010"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-008",
+          "e-w3-009",
+          "e-w3-010"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-019",
+          "ko-020"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ca-010"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-010.html"
+  },
+  {
+    "id": "day-011",
+    "title": "11日目：10分でできる基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-001",
+          "k2-002",
+          "k2-003",
+          "k2-004"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-011",
+          "e-w3-012",
+          "e-w3-013"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-021",
+          "ko-022"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-001"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-011.html"
+  },
+  {
+    "id": "day-012",
+    "title": "12日目：漢字を中心にした復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-005",
+          "k3-006",
+          "k3-007",
+          "k3-008"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-014",
+          "e-w3-015",
+          "e-w3-016"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-023",
+          "ko-024"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-002"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-012.html"
+  },
+  {
+    "id": "day-013",
+    "title": "13日目：漢字と英語スペルの確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-009",
+          "k2-010",
+          "k2-001",
+          "k2-002"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-017",
+          "e-w3-018",
+          "e-w3-019"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-025",
+          "ko-026"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-003"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-013.html"
+  },
+  {
+    "id": "day-014",
+    "title": "14日目：漢字と国語の基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-003",
+          "k3-004",
+          "k3-005",
+          "k3-006"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-020",
+          "e-fa-001",
+          "e-fa-002"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-027",
+          "ko-028"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-004"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-014.html"
+  },
+  {
+    "id": "day-015",
+    "title": "15日目：今日のつまずき直し",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-007",
+          "k2-008",
+          "k2-009",
+          "k2-010"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-fa-003",
+          "e-fa-004",
+          "e-fa-005"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-029",
+          "ko-030"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-005"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-015.html"
+  },
+  {
+    "id": "day-016",
+    "title": "16日目：漢字・英語・国語のミックス復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-001",
+          "k3-002",
+          "k3-003",
+          "k3-004"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-fa-006",
+          "e-fa-007",
+          "e-fa-008"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-031",
+          "ko-032"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-006"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-016.html"
+  },
+  {
+    "id": "day-017",
+    "title": "17日目：10分でできる基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-005",
+          "k2-006",
+          "k2-007",
+          "k2-008"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-fa-009",
+          "e-fa-010",
+          "e-fa-011"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-033",
+          "ko-034"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-007"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-017.html"
+  },
+  {
+    "id": "day-018",
+    "title": "18日目：漢字を中心にした復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-009",
+          "k3-010",
+          "k3-001",
+          "k3-002"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-fa-012",
+          "e-fa-013",
+          "e-fa-014"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-035",
+          "ko-036"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-008"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-018.html"
+  },
+  {
+    "id": "day-019",
+    "title": "19日目：漢字と英語スペルの確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-003",
+          "k2-004",
+          "k2-005",
+          "k2-006"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-fa-015",
+          "e-fa-016",
+          "e-fa-017"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-037",
+          "ko-038"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-009"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-019.html"
+  },
+  {
+    "id": "day-020",
+    "title": "20日目：漢字と国語の基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-007",
+          "k3-008",
+          "k3-009",
+          "k3-010"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-fa-018",
+          "e-fa-019",
+          "e-fa-020"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-039",
+          "ko-040"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-ku-010"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-020.html"
+  },
+  {
+    "id": "day-021",
+    "title": "21日目：今日のつまずき直し",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-001",
+          "k2-002",
+          "k2-003",
+          "k2-004"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-001",
+          "e-al-002",
+          "e-al-003"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-001",
+          "ko-002"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-001"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-021.html"
+  },
+  {
+    "id": "day-022",
+    "title": "22日目：漢字・英語・国語のミックス復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-005",
+          "k3-006",
+          "k3-007",
+          "k3-008"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-004",
+          "e-al-005",
+          "e-al-006"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-003",
+          "ko-004"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-002"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-022.html"
+  },
+  {
+    "id": "day-023",
+    "title": "23日目：10分でできる基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-009",
+          "k2-010",
+          "k2-001",
+          "k2-002"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-007",
+          "e-al-008",
+          "e-al-009"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-005",
+          "ko-006"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-003"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-023.html"
+  },
+  {
+    "id": "day-024",
+    "title": "24日目：漢字を中心にした復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-003",
+          "k3-004",
+          "k3-005",
+          "k3-006"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-010",
+          "e-al-011",
+          "e-al-012"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-007",
+          "ko-008"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-004"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-024.html"
+  },
+  {
+    "id": "day-025",
+    "title": "25日目：漢字と英語スペルの確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-007",
+          "k2-008",
+          "k2-009",
+          "k2-010"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-013",
+          "e-al-014",
+          "e-al-015"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-009",
+          "ko-010"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-005"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-025.html"
+  },
+  {
+    "id": "day-026",
+    "title": "26日目：漢字と国語の基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-001",
+          "k3-002",
+          "k3-003",
+          "k3-004"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-016",
+          "e-al-017",
+          "e-al-018"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-011",
+          "ko-012"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-006"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-026.html"
+  },
+  {
+    "id": "day-027",
+    "title": "27日目：今日のつまずき直し",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-005",
+          "k2-006",
+          "k2-007",
+          "k2-008"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-al-019",
+          "e-al-020",
+          "e-w3-001"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-013",
+          "ko-014"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-007"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-027.html"
+  },
+  {
+    "id": "day-028",
+    "title": "28日目：漢字・英語・国語のミックス復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-009",
+          "k3-010",
+          "k3-001",
+          "k3-002"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-002",
+          "e-w3-003",
+          "e-w3-004"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-015",
+          "ko-016"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-008"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-028.html"
+  },
+  {
+    "id": "day-029",
+    "title": "29日目：10分でできる基礎確認",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade2.json",
+        "questionIds": [
+          "k2-003",
+          "k2-004",
+          "k2-005",
+          "k2-006"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-005",
+          "e-w3-006",
+          "e-w3-007"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-017",
+          "ko-018"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-009"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-029.html"
+  },
+  {
+    "id": "day-030",
+    "title": "30日目：漢字を中心にした復習",
+    "gradeTarget": [
+      "grade2",
+      "grade3"
+    ],
+    "estimatedMinutes": 10,
+    "items": [
+      {
+        "subject": "kanji",
+        "source": "kanji-grade3.json",
+        "questionIds": [
+          "k3-007",
+          "k3-008",
+          "k3-009",
+          "k3-010"
+        ]
+      },
+      {
+        "subject": "english",
+        "source": "english-spelling.json",
+        "questionIds": [
+          "e-w3-008",
+          "e-w3-009",
+          "e-w3-010"
+        ]
+      },
+      {
+        "subject": "kokugo",
+        "source": "kokugo-basic.json",
+        "questionIds": [
+          "ko-019",
+          "ko-020"
+        ]
+      },
+      {
+        "subject": "math",
+        "source": "math-review.json",
+        "questionIds": [
+          "m-wo-010"
+        ]
+      }
+    ],
+    "pdf": "pdf/daily/day-030.html"
+  }
+]

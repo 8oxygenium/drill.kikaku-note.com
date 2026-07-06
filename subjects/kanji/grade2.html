@@ -23,6 +23,8 @@
     </button>
     <nav class="site-nav" id="site-nav" aria-label="教科">
       <ul>
+        <li><a href="/parent/">親向け</a></li>
+        <li><a href="/pdf/">PDF</a></li>
         <li><a href="/subjects/kanji/">漢字</a></li>
         <li><a href="/subjects/kokugo/">国語</a></li>
         <li><a href="/subjects/english/">英語</a></li>
@@ -39,6 +41,14 @@
     <div class="page-head">
       <h1>小2 漢字ドリル</h1>
       <p class="lead">小1漢字の復習と、小2漢字の基礎です。10問やってみましょう。</p>
+    </div>
+
+    <div class="quick-print-row">
+      <p>紙でやる場合はこちら（クイズに答えなくても、すぐに印刷できます）</p>
+      <div class="btn-row">
+        <button type="button" class="btn btn-outline" id="quick-print-btn">このページを印刷する</button>
+        <a class="btn btn-outline" href="/pdf/kanji/grade2-001.html">PDF用ページを開く</a>
+      </div>
     </div>
 
     <div class="quiz-shell">
@@ -61,6 +71,17 @@
 
 <script src="/assets/js/storage.js"></script>
 <script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/print-page.js"></script>
 <script src="/assets/js/app.js"></script>
+<script>
+  document.getElementById("quick-print-btn").addEventListener("click", function () {
+    window.DrillPrint.quickPrint({
+      src: "/data/kanji-grade2.json",
+      printMode: "kanji",
+      title: "小2 漢字ドリル",
+      count: 10
+    });
+  });
+</script>
 </body>
 </html>

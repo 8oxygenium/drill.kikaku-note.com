@@ -29,6 +29,46 @@
       grade + label + "　" + r.lastScore + " / " + r.lastTotal + " 問せいかい</p>";
   }
 
+  // トップページの「今日のおすすめドリル」（#today-drill があれば描画）
+  function initTodayDrill() {
+    var box = document.getElementById("today-drill");
+    if (!box || !global.DrillDaily) return;
+    global.DrillDaily.renderTodayInto(box);
+  }
+
+  // トップページの「最新ドリル」（#latest-drills があれば描画。最大5件）
+  function initLatestDrills() {
+    var box = document.getElementById("latest-drills");
+    if (!box) return;
+    fetch("/data/latest-drills.json", { cache: "no-cache" })
+      .then(function (r) { return r.json(); })
+      .then(function (list) {
+        box.innerHTML = "";
+        list.slice(0, 5).forEach(function (item) {
+          var a = document.createElement("a");
+          a.className = "latest-item";
+          a.href = item.url;
+          var left = document.createElement("span");
+          left.innerHTML =
+            '<span class="latest-date">' + item.date + "</span><br>" +
+            '<strong>' + item.title + "</strong>";
+          var tags = document.createElement("span");
+          tags.className = "latest-tags";
+          (item.tags || []).forEach(function (t) {
+            var s = document.createElement("span");
+            s.textContent = t;
+            tags.appendChild(s);
+          });
+          a.appendChild(left);
+          a.appendChild(tags);
+          box.appendChild(a);
+        });
+      })
+      .catch(function () {
+        box.innerHTML = '<p class="note">最新ドリルを読み込めませんでした。</p>';
+      });
+  }
+
   function ready(fn) {
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fn);
     else fn();
@@ -37,5 +77,7 @@
   ready(function () {
     initNav();
     initLastResult();
+    initTodayDrill();
+    initLatestDrills();
   });
 })(window);

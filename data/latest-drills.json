@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2026-07-06",
+    "title": "日替わりドリル30日分を追加（漢字4・英語3・国語2・算数1）",
+    "type": "daily",
+    "url": "/pdf/daily/day-001.html",
+    "tags": ["日替わり", "PDF", "10分"]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "漢字プリント（小2・小3）を追加",
+    "type": "pdf",
+    "url": "/pdf/kanji/",
+    "tags": ["漢字", "PDF", "書き取り"]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "英語スペルプリントを追加",
+    "type": "pdf",
+    "url": "/pdf/english/spelling-001.html",
+    "tags": ["英語", "PDF", "スペル"]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "漢字の書き順ノーヒント練習を追加",
+    "type": "kanji",
+    "url": "/subjects/kanji/write-order.html",
+    "tags": ["漢字", "ノーヒント"]
+  },
+  {
+    "date": "2026-07-06",
+    "title": "間違えた問題だけの復習ページを追加",
+    "type": "review",
+    "url": "/review/",
+    "tags": ["復習", "印刷"]
+  }
+]

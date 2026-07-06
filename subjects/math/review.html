@@ -23,6 +23,8 @@
     </button>
     <nav class="site-nav" id="site-nav" aria-label="教科">
       <ul>
+        <li><a href="/parent/">親向け</a></li>
+        <li><a href="/pdf/">PDF</a></li>
         <li><a href="/subjects/kanji/">漢字</a></li>
         <li><a href="/subjects/kokugo/">国語</a></li>
         <li><a href="/subjects/english/">英語</a></li>
@@ -39,6 +41,13 @@
     <div class="page-head">
       <h1>算数 力だめしドリル</h1>
       <p class="lead">計算・九九・短い文章題をまぜた10問です。答えは数字で入力します。</p>
+    </div>
+
+    <div class="quick-print-row">
+      <p>紙でやる場合はこちら（クイズに答えなくても、すぐに印刷できます）</p>
+      <div class="btn-row">
+        <button type="button" class="btn btn-outline" id="quick-print-btn">このページを印刷する</button>
+      </div>
     </div>
 
     <div class="quiz-shell">
@@ -60,6 +69,17 @@
 
 <script src="/assets/js/storage.js"></script>
 <script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/print-page.js"></script>
 <script src="/assets/js/app.js"></script>
+<script>
+  document.getElementById("quick-print-btn").addEventListener("click", function () {
+    window.DrillPrint.quickPrint({
+      src: "/data/math-review.json",
+      printMode: "plain",
+      title: "算数 力だめしドリル",
+      count: 10
+    });
+  });
+</script>
 </body>
 </html>
