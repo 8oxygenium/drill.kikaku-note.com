@@ -269,8 +269,111 @@ main { display: block; padding-block: 8px 48px; }
 .site-footer .container { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
 .site-footer a { color: var(--ink-soft); }
 
-/* ---- 印刷用シート（画面では隠す） ---- */
+/* ---- 印刷用シート（画面では隠す。PDF専用ページでは表示） ---- */
 .print-sheet { display: none; }
+
+/* 書き順ノーヒント練習の書き取りマスは、画面では隠し印刷時のみ表示する */
+.writeorder-boxes { display: none; }
+
+/* =========================================================
+   P1: 印刷・PDF・親導線まわりの追加スタイル
+   ========================================================= */
+
+/* クイックプリント（各ドリルページ上部の「紙でやる場合はこちら」） */
+.quick-print-row {
+  margin-top: 16px; background: var(--bg-soft); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px 16px;
+}
+.quick-print-row p { margin: 0 0 10px; color: var(--ink-soft); font-size: 0.95rem; }
+.quick-print-row .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.quick-print-row .btn { flex: 1 1 auto; min-height: 48px; font-size: 0.95rem; }
+
+/* 印刷前の案内（実際に印刷されない） */
+.print-notice {
+  position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 12px);
+  background: var(--ink); color: #fff; padding: 12px 20px; border-radius: 999px;
+  font-size: 0.95rem; font-weight: 700; opacity: 0; pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease; z-index: 500; max-width: 90vw; text-align: center;
+}
+.print-notice.is-shown { opacity: 1; transform: translate(-50%, 0); }
+
+/* PDF専用ページ：画面上でも問題プレビューを見せる */
+body.pdf-page .print-sheet {
+  max-width: 760px; margin: 20px auto 0; background: #fff;
+  border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: 26px 28px; box-shadow: var(--shadow);
+}
+body.pdf-page .print-head { border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: 14px; }
+body.pdf-page .print-title { font-size: 1.3rem; margin: 0 0 6px; }
+body.pdf-page .print-name-line { display: flex; justify-content: space-between; color: var(--ink-soft); font-size: 0.95rem; }
+body.pdf-page .print-note { color: var(--ink-soft); margin: 0 0 14px; font-size: 0.95rem; }
+body.pdf-page .print-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+body.pdf-page .print-item { border-bottom: 1px dashed var(--line); padding-bottom: 14px; }
+body.pdf-page .print-sentence { color: var(--ink-soft); margin: 0 0 4px; }
+body.pdf-page .print-q { font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; }
+body.pdf-page .print-choices { color: var(--ink-soft); margin: 0 0 6px; }
+body.pdf-page .print-kanji-boxes { display: flex; gap: 6px; margin-top: 6px; }
+body.pdf-page .print-kanji-boxes .kbox { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 4px; display: inline-block; }
+body.pdf-page .print-spell-line { display: flex; gap: 6px; margin-top: 6px; }
+body.pdf-page .print-spell-line .sbox { width: 24px; height: 28px; border-bottom: 2px solid var(--line); display: inline-block; }
+body.pdf-page .print-answer-line { height: 26px; border-bottom: 1.5px solid var(--line); margin-top: 6px; }
+body.pdf-page .print-answerkey {
+  margin-top: 20px; padding-top: 16px; border-top: 3px solid var(--yellow);
+  background: var(--yellow-surface); border-radius: var(--radius); padding: 16px 18px;
+}
+body.pdf-page .print-answerkey-title { font-size: 1.05rem; margin: 0 0 10px; color: #6b4e00; }
+body.pdf-page .print-answerkey-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; font-size: 0.92rem; }
+body.pdf-page .ak-a { color: #6b4e00; font-weight: 800; margin-left: 8px; }
+
+.pdf-actions { max-width: 760px; margin: 16px auto 40px; text-align: center; }
+.pdf-actions .btn { min-width: 280px; }
+
+/* PDF一覧・最新ドリル・今日のドリルカード */
+.pdf-list, .latest-list { display: grid; gap: 12px; margin-top: 8px; }
+.pdf-list .card, .latest-item {
+  display: block; background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px 18px; box-shadow: var(--shadow); text-decoration: none; color: var(--ink);
+}
+.latest-item { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.latest-date { color: var(--ink-soft); font-size: 0.85rem; }
+.latest-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.latest-tags span { background: var(--blue-surface); color: var(--blue-strong); font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+
+.today-card {
+  background: var(--green-surface); border: 1px solid #cfe6d6; border-radius: var(--radius-lg);
+  padding: 20px 22px;
+}
+.today-badge { display: inline-block; background: var(--green); color: #fff; font-size: 0.82rem; font-weight: 800; padding: 3px 10px; border-radius: 999px; margin: 0 0 8px; }
+.today-title { font-size: 1.2rem; margin: 0 0 6px; }
+.today-summary { color: #2f6b41; margin: 0 0 14px; font-weight: 700; }
+.today-actions .btn { min-width: 240px; }
+
+/* 親向けページ */
+.parent-picker {
+  background: var(--blue-surface); border: 1px solid #cfe0f2; border-radius: var(--radius-lg);
+  padding: 22px 24px; margin-top: 16px;
+}
+.parent-picker h2 { margin-top: 0; }
+.parent-picker .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+.parent-note { background: var(--yellow-surface); border-radius: var(--radius); padding: 14px 16px; color: #6b4e00; margin-top: 16px; }
+.priority-list { margin: 10px 0 0; padding-left: 1.3em; }
+.priority-list li { margin-bottom: 4px; }
+
+/* 書き順ノーヒント練習 */
+.writeorder-card {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: 22px; box-shadow: var(--shadow); margin-bottom: 16px;
+}
+.writeorder-meta { color: var(--ink-soft); font-weight: 700; font-size: 0.92rem; margin: 0 0 8px; }
+.writeorder-reading { font-size: 1.3rem; font-weight: 800; margin: 0 0 6px; }
+.writeorder-words, .writeorder-sentence { color: var(--ink-soft); margin: 0 0 6px; }
+.writeorder-blank { font-size: 1.5rem; letter-spacing: 6px; margin: 10px 0; }
+.writeorder-reveal { margin-top: 10px; }
+.writeorder-answer {
+  display: none; margin-top: 10px; font-size: 1.6rem; font-weight: 900; color: var(--blue-strong);
+  background: var(--blue-surface); border-radius: var(--radius); padding: 10px 16px;
+}
+.writeorder-answer.is-shown { display: inline-block; }
 
 /* ---- レスポンシブ ---- */
 @media (max-width: 640px) {
@@ -288,6 +391,12 @@ main { display: block; padding-block: 8px 48px; }
   .quiz-choices { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.6rem; }
   .quiz-question { font-size: 1.25rem; }
+  .quick-print-row .btn-row { flex-direction: column; }
+  .pdf-actions .btn { min-width: 0; width: 100%; }
+  .today-actions .btn { min-width: 0; width: 100%; }
+  .parent-picker .btn-row { flex-direction: column; }
+  .parent-picker .btn { width: 100%; }
+  body.pdf-page .print-sheet { padding: 18px 16px; margin: 12px auto 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- P0期間は検索非公開。品質確認・承認後に noindex を解除する。 -->
+<!-- P1期間も検索非公開。家庭内で1週間使ってからnoindex解除を判断する。 -->
 <meta name="robots" content="noindex,nofollow">
 <title>つまずきドリル｜小学生の10分復習ドリル</title>
-<meta name="description" content="小学生の漢字・国語・英語・算数のつまずきを10分で復習できる家庭学習ドリルサイトです。">
+<meta name="description" content="小学生の漢字・国語・英語・算数のつまずきを10分で復習できる家庭学習ドリルサイトです。親がページを選び、子どもが紙または画面で取り組めます。">
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/print.css">
 </head>
@@ -24,6 +24,8 @@
     </button>
     <nav class="site-nav" id="site-nav" aria-label="教科">
       <ul>
+        <li><a href="/parent/">親向け</a></li>
+        <li><a href="/pdf/">PDF</a></li>
         <li><a href="/subjects/kanji/">漢字</a></li>
         <li><a href="/subjects/kokugo/">国語</a></li>
         <li><a href="/subjects/english/">英語</a></li>
@@ -36,39 +38,69 @@
 <main id="main">
   <div class="container">
 
+    <!-- 1. サイト名 / 2. 使い方 -->
     <section class="hero">
       <h1>つまずきドリル</h1>
-      <p>小学生の苦手を、10分で見つけて直すドリルです。まちがえても大丈夫。まちがえたところを、もう一度やって直しましょう。</p>
+      <p>小学生の漢字・国語・英語・算数を、1日10分で復習する家庭用ドリルです。
+      親がページを選んで、子どもが紙または画面で取り組めます。</p>
       <p id="last-result" class="last-result" hidden></p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="/subjects/kanji/grade2.html">今日の10問（小2・漢字）</a>
-        <a class="btn btn-secondary" href="/subjects/kanji/grade3.html">今日の10問（小3・漢字）</a>
+        <a class="btn btn-primary" href="/parent/today.html">今日の10分ドリル</a>
+        <a class="btn btn-secondary" href="/parent/">親が指定する</a>
       </div>
     </section>
 
     <section class="section">
-      <h2>学年でえらぶ</h2>
-      <div class="card-grid">
-        <a class="card" href="/subjects/kanji/grade2.html">
-          <span class="card-badge badge-priority">小学2年生向け</span>
-          <p class="card-title">小2の10分復習</p>
-          <p class="card-desc">漢字と国語がにがてな子へ。まずは漢字から。</p>
-        </a>
-        <a class="card" href="/subjects/kanji/grade3.html">
-          <span class="card-badge badge-priority">小学3年生向け</span>
-          <p class="card-title">小3の10分復習</p>
-          <p class="card-desc">漢字と英語スペルがむずかしくなる学年。基礎確認から。</p>
-        </a>
+      <h2>使い方</h2>
+      <div class="note">
+        <p>①親が <strong>「親が指定する」</strong> か <strong>「今日の10分ドリル」</strong> でページを選ぶ
+        ②子どもがそのURLを開き、<strong>紙に印刷する</strong> か <strong>画面で解く</strong>
+        ③まちがえた問題だけ、あとでもう一度復習する。</p>
       </div>
     </section>
 
+    <!-- 3. 今日のおすすめドリル -->
     <section class="section">
-      <h2>教科でえらぶ</h2>
+      <h2>今日のおすすめドリル</h2>
+      <div id="today-drill"><p class="note">読み込み中…</p></div>
+    </section>
+
+    <!-- 4. 最新ドリル -->
+    <section class="section">
+      <h2>最新ドリル</h2>
+      <div id="latest-drills" class="latest-list"><p class="note">読み込み中…</p></div>
+    </section>
+
+    <!-- 5. PDFで印刷する -->
+    <section class="section">
+      <h2>PDFで印刷する</h2>
+      <p class="lead-text">紙で解きたいときは、印刷用ページからPDFに保存できます。</p>
+      <div class="cta-row">
+        <a class="btn btn-outline" href="/pdf/">PDF一覧を見る</a>
+      </div>
+    </section>
+
+    <!-- 6. 親が指定するページ -->
+    <section class="section">
+      <h2>親が指定するページ</h2>
+      <div class="parent-picker">
+        <h2>今日はこれをやってね、と渡すページ</h2>
+        <p>子どもには <code>/parent/</code> のURLだけ伝えれば大丈夫です。学年別の優先順位つきで、今日やることを選べます。</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/parent/grade2.html">小学2年生向け</a>
+          <a class="btn btn-primary" href="/parent/grade3.html">小学3年生向け</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 教科別に探す -->
+    <section class="section">
+      <h2>教科別に探す</h2>
       <div class="card-grid">
         <a class="card" href="/subjects/kanji/">
           <span class="card-badge badge-kanji">最重要</span>
           <p class="card-title">漢字</p>
-          <p class="card-desc">読み・熟語・文の中で使う。書き取り印刷もできます。</p>
+          <p class="card-desc">読み・熟語・文の中で使う。書き取り印刷、書き順ノーヒント練習もできます。</p>
         </a>
         <a class="card" href="/subjects/kokugo/">
           <span class="card-badge badge-kokugo">基礎</span>
@@ -88,15 +120,44 @@
       </div>
     </section>
 
+    <!-- 8. 学年別に探す -->
+    <section class="section">
+      <h2>学年別に探す</h2>
+      <div class="card-grid">
+        <a class="card" href="/grades/grade2.html">
+          <span class="card-badge badge-priority">小学2年生</span>
+          <p class="card-title">小2 教材ぜんぶ</p>
+          <p class="card-desc">漢字・国語・英語・算数を1ページから探せます。</p>
+        </a>
+        <a class="card" href="/grades/grade3.html">
+          <span class="card-badge badge-priority">小学3年生</span>
+          <p class="card-title">小3 教材ぜんぶ</p>
+          <p class="card-desc">漢字・英語・国語・算数を1ページから探せます。</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 9. 間違えた問題だけ復習 -->
+    <section class="section">
+      <h2>間違えた問題だけ復習</h2>
+      <p class="lead-text">前回のドリルでまちがえた問題だけを、もう一度・印刷して復習できます。</p>
+      <div class="cta-row">
+        <a class="btn btn-outline" href="/review/">間違い復習ページへ</a>
+      </div>
+    </section>
+
     <section class="section">
       <h2>おうちの方へ</h2>
       <div class="note">
         <p>このサイトは、<strong>小2・小3のつまずきを短い時間で補修する</strong>ための家庭学習ドリルです。
-        1回10分ほどで終わる10問を用意しました。「今日はこれをやろう」と1つ選んで、お子さんに渡してあげてください。</p>
-        <p>まちがえた問題だけをもう一度やり直せます。紙で解きたいときは<strong>印刷（答えあり・なし）</strong>もできます。
-        ログインは不要で、<strong>お子さんの名前や個人情報は保存しません</strong>。直近の点数だけがこの端末に残ります。</p>
+        ログインは不要で、<strong>お子さんの名前や個人情報は保存しません</strong>。直近の点数と間違えた問題IDだけが、この端末（ブラウザ）だけに残ります。</p>
       </div>
     </section>
+
+    <!-- 10. 開発中メモ -->
+    <!-- 開発メモ：本サイトはP1（印刷PDF・親指定・日替わりドリルの土台づくり）を実装中です。
+         365日ぶんのデータではなく、まずは30日ぶんのみを用意し、あとから増やせる構造にしています。
+         検索エンジンには公開していません（noindex）。品質確認後にnoindexを解除します。 -->
 
   </div>
 </main>
@@ -104,11 +165,12 @@
 <footer class="site-footer">
   <div class="container">
     <span>つまずきドリル（drill.kikaku-note.com）</span>
-    <span>小2・小3の家庭学習用／P0・準備中</span>
+    <span>小2・小3の家庭学習用／P1・準備中</span>
   </div>
 </footer>
 
 <script src="/assets/js/storage.js"></script>
+<script src="/assets/js/daily.js"></script>
 <script src="/assets/js/app.js"></script>
 </body>
 </html>

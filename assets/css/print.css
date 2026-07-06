@@ -18,8 +18,12 @@
   .quiz-shell,
   .hero,
   .note,
-  .page-head .lead,
-  .btn {
+  .page-head,
+  .btn,
+  .pdf-actions,
+  .print-notice,
+  .parent-picker,
+  .quick-print-row {
     display: none !important;
   }
 
@@ -70,7 +74,23 @@
   /* こたえ：既定は非表示。答えありモードでのみ表示 */
   .print-answer { display: none; font-size: 11pt; font-weight: 700; margin: 4pt 0 0; color: #1a5e2a; }
   body.print-answers .print-answer { display: block; }
+
+  /* 書き順ノーヒント練習：答えは既定で非表示。答えありモードでのみ表示 */
+  .writeorder-reveal { display: none !important; }
+  .writeorder-card { page-break-inside: avoid; border-bottom: 1px dotted #999; padding-bottom: 10pt; margin-bottom: 10pt; }
+  .writeorder-answer { display: none; font-size: 16pt; }
+  body.print-answers .writeorder-answer { display: block; }
+
+  /* 独立PDFページのこたえ（おうちの方へ）：最終ページにまとめて改ページする */
+  .print-note { font-size: 10.5pt; color: #333; margin: 0 0 10pt; }
+  .print-answerkey { page-break-before: always; }
+  .print-answerkey-title { font-size: 14pt; border-bottom: 2px solid #000; padding-bottom: 4pt; margin: 0 0 10pt; }
+  .print-answerkey-list { margin: 0; padding-left: 1.4em; font-size: 11pt; }
+  .print-answerkey-list li { margin-bottom: 6pt; }
+  .ak-q { display: inline; }
+  .ak-a { display: inline; font-weight: 700; color: #1a5e2a; margin-left: 6pt; }
 }
 
-/* 画面表示中は常に隠す（保険） */
+/* 画面表示中は常に隠す（保険）。ただしPDF専用ページ（body.pdf-page）では表示する。 */
 .print-sheet { display: none; }
+body.pdf-page .print-sheet { display: block; }

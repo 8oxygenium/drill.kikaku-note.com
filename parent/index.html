@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>親向けページ｜つまずきドリル</title>
+<meta name="description" content="親が今日やるドリルを選んで、子どもに渡すためのページです。学年別・教科別・PDF・間違い復習をまとめています。">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/print.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">ド</span>
+      <span class="brand-text">つまずきドリル</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="教科">
+      <ul>
+        <li><a href="/parent/">親向け</a></li>
+        <li><a href="/pdf/">PDF</a></li>
+        <li><a href="/subjects/kanji/">漢字</a></li>
+        <li><a href="/subjects/kokugo/">国語</a></li>
+        <li><a href="/subjects/english/">英語</a></li>
+        <li><a href="/subjects/math/">算数</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <p class="crumbs"><a href="/">トップ</a><span>›</span>親向け</p>
+
+    <div class="page-head">
+      <h1>親向けページ</h1>
+      <p class="lead">今日やるドリルをここで選んで、子どもにはこのページのURL（/parent/）だけ伝えてください。</p>
+    </div>
+
+    <section class="section">
+      <h2>今日やるドリルを選ぶ</h2>
+      <div id="today-drill"><p class="note">読み込み中…</p></div>
+    </section>
+
+    <section class="section">
+      <h2>学年別に選ぶ</h2>
+      <div class="card-grid">
+        <a class="card" href="/parent/grade2.html">
+          <span class="card-badge badge-priority">小学2年生</span>
+          <p class="card-title">小2の優先順位つきメニュー</p>
+          <p class="card-desc">漢字→国語→英語スペル→算数維持の順で提案します。</p>
+        </a>
+        <a class="card" href="/parent/grade3.html">
+          <span class="card-badge badge-priority">小学3年生</span>
+          <p class="card-title">小3の優先順位つきメニュー</p>
+          <p class="card-desc">漢字→英語スペル→国語軽め→算数維持の順で提案します。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>教科別に選ぶ</h2>
+      <div class="card-grid">
+        <a class="card" href="/subjects/kanji/"><p class="card-title">漢字</p><p class="card-desc">読み・熟語・書き取り・書き順ノーヒント</p></a>
+        <a class="card" href="/subjects/kokugo/"><p class="card-title">国語</p><p class="card-desc">主語述語・助詞・指示語・短文読解</p></a>
+        <a class="card" href="/subjects/english/"><p class="card-title">英語</p><p class="card-desc">アルファベット・音・スペル</p></a>
+        <a class="card" href="/subjects/math/"><p class="card-title">算数</p><p class="card-desc">計算・九九・文章題</p></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>PDFを印刷する</h2>
+      <p class="lead-text">画面を見せずに、紙だけ渡したいときはこちら。</p>
+      <div class="cta-row">
+        <a class="btn btn-outline" href="/pdf/">PDF一覧を見る</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>間違えた問題だけ復習する</h2>
+      <p class="lead-text">前回まちがえた問題だけを、もう一度・印刷して復習できます。</p>
+      <div class="cta-row">
+        <a class="btn btn-outline" href="/review/">間違い復習ページへ</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="note">
+        <p><strong>子どもにはこのページ（/parent/）のURLを直接渡す必要はありません。</strong>
+        親がここでページを選び、できあがった画面や印刷物（またはリンク）を子どもに渡してください。
+        このサイトはログイン不要・個人情報を保存しません。</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span><a href="/">つまずきドリル</a></span>
+    <span>小2・小3の家庭学習用</span>
+  </div>
+</footer>
+
+<script src="/assets/js/storage.js"></script>
+<script src="/assets/js/daily.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
